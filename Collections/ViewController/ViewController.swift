@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     }
     
     func configureView() {
+        collectionView.setCollectionViewLayout(GridLayout(), animated: true)
         collectionView.dataSource = CocoaConf.all
         collectionView.reloadData()
         
